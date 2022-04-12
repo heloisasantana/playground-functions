@@ -7,8 +7,9 @@ function compareTrue(amostra1, amostra2) {
   }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  let areaTriangulo = (base*height)/2
+  return areaTriangulo
 }
 
 // Desafio 3
