@@ -12,25 +12,39 @@ function calcArea(base,height) {
   return areaTriangulo
 }
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
-
-// Desafio 4
-function concatName() {
-  // seu código aqui
-}
+// Desafio 3: Referência consultada para inserir split: https://www.w3schools.com/jsref/jsref_split.asp 
+  function splitSentence(frase) {
+  let arrayStrings = [];
+  arrayStrings = frase.split(' ');
+  return arrayStrings;
+  }
+  
+// Desafio 4 : Referência consultada para inserir concat: https://www.w3schools.com/jsref/jsref_concat_string.asp
+ function concatName(strings) {
+ let lastWord = array[array.length-1]
+ let firstWord = array[0]
+ let concatenando = lastWord.concat(", " , firstWord)
+ return concatenando
+ }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+  function footballPoints(wins, ties) {
+  let points = (3*wins)+(1*ties)
+  return points
+  }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numeros) {
+  let numeroMaior = 0;
+  for (indice = 0; indice < numeros.length; indice += 1) {
+  if (numeros[indice] > numeroMaior) {numeroMaior = numeros[indice]}
+  }
+
+  let vezesQueNumeroAparece = 0;
+  for(let index = 0; index < numeros.length; index += 1) { 
+  if (numeros[index] === numeroMaior) 
+  {vezesQueNumeroAparece = vezesQueNumeroAparece + 1)} 
+  }}
 
 // Desafio 7
 function catAndMouse() {
