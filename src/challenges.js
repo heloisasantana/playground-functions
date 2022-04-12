@@ -20,25 +20,34 @@
   }
   
  // Desafio 4 : Referência consultada para inserir concat: https://www.w3schools.com/jsref/jsref_concat_string.asp
- function concatName(strings) {
+  function concatName(array) {
   let lastWord = array[array.length-1]
   let firstWord = array[0]
   let concatenando = lastWord.concat(", " , firstWord)
   return concatenando
   }
-  }
-
+  
  // Desafio 5
- function footballPoints(wins, ties) {
+  function footballPoints(wins, ties) {
   let points = (3*wins)+(1*ties)
   return points
   }
 
-// Desafio 6
- function highestCount() {
- // seu código aqui
- }
-
+ // Desafio 6
+  function highestCount(numbers) {
+  let maiorNumero = numbers[0];
+  for (indice = 0; indice < numbers.length; indice += 1) {
+  if (numbers[indice] > maiorNumero) {maiorNumero = numbers[indice]}
+  }
+    
+  let contador = 0;
+  for(let posicao = 0; posicao < numbers.length; posicao += 1) { 
+  if (numbers[posicao] === maiorNumero) 
+  {contador = contador + 1}
+  }
+  return contador
+  }
+ 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
