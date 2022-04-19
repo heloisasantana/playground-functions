@@ -74,12 +74,30 @@
   }
 
  // Desafio 9
-  function encode() {
-  
+  function encode(stringBase) {
+  let stringCodificada = ""
+  for (index = 0; index < stringBase.length; index += 1) {
+  if (stringBase[index] === "a") {stringCodificada = stringCodificada + "1"}
+  else if (stringBase[index] === "e") {stringCodificada = stringCodificada + "2"}
+  else if (stringBase[index] === "i") {stringCodificada = stringCodificada + "3"}
+  else if (stringBase[index] === "o") {stringCodificada = stringCodificada + "4"}
+  else if (stringBase[index] === "u") {stringCodificada = stringCodificada + "5"}
+  else {stringCodificada = stringCodificada + stringBase[index]}
+  }
+  return stringCodificada
   }
  
-  function decode() {
-  
+  function decode(stringCodificada) {
+  let stringDescodificada = ""
+  for (i = 0; i < stringCodificada.length; i += 1) {
+  if (stringCodificada[i] === "1") {stringDescodificada = stringDescodificada + "a"}
+  else if (stringCodificada[i] === "2") {stringDescodificada = stringDescodificada + "e"}
+  else if (stringCodificada[i] === "3") {stringDescodificada = stringDescodificada + "i"}
+  else if (stringCodificada[i] === "4") {stringDescodificada = stringDescodificada + "o"}
+  else if (stringCodificada[i] === "5") {stringDescodificada = stringDescodificada + "u"}
+  else {stringDescodificada = stringDescodificada + stringCodificada[i]}
+  }
+  return stringDescodificada
   }
   
   // // Desafio 10
