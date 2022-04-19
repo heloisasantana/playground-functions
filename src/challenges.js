@@ -58,8 +58,19 @@
   }
      
  // Desafio 8
-  function fizzBuzz() {
-  
+  function fizzBuzz(arrayNumbers) {
+  let arrayNova = [];
+  for (index = 0; index < arrayNumbers.length; index += 1) { 
+  if (arrayNumbers[index] % 3 === 0 && arrayNumbers[index] % 5 !== 0) { 
+  arrayNova.push('fizz') } 
+  else if (arrayNumbers[index] % 5 === 0 && arrayNumbers[index] % 3 !== 0 ) {
+  arrayNova.push('buzz') } 
+  else if (arrayNumbers[index] % 5 === 0 && arrayNumbers[index] % 3 === 0) { 
+  arrayNova.push('fizzBuzz') }
+  else {arrayNova.push('bug!')
+  }
+  }
+  return arrayNova
   }
 
  // Desafio 9
