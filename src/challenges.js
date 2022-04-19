@@ -19,7 +19,7 @@
   return arrayStrings;
   }
   
- // Desafio 4 : Referência consultada para inserir concat: https://www.w3schools.com/jsref/jsref_concat_string.asp
+ // Desafio 4: Referência consultada para inserir concat: https://www.w3schools.com/jsref/jsref_concat_string.asp
   function concatName(array) {
   let lastWord = array[array.length-1]
   let firstWord = array[0]
@@ -33,7 +33,7 @@
   return points
   }
 
- // Desafio 6
+ // Desafio 6 
   function highestCount(numbers) {
   let maiorNumero = numbers[0];
   for (indice = 0; indice < numbers.length; indice += 1) {
@@ -48,30 +48,34 @@
   return contador
   }
  
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+ // Desafio 7: Referência consultada para inserir Math.abs: https://www.w3schools.com/jsref/jsref_abs.asp
+  function catAndMouse(mouse, catOne, catTwo) {
+  let distanciaUm = Math.abs(mouse - catOne)
+  let distanciaDois = Math.abs(mouse - catTwo)
+  if (distanciaUm < distanciaDois) {return "cat1"}
+  else if (distanciaDois < distanciaUm) {return "cat2"}
+  else {return "os gatos trombam e o rato foge"}
+  }
+     
+ // Desafio 8
+  function fizzBuzz() {
+  
+  }
 
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
-
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
-
-// Desafio 10
-function techList() {
-  // seu código aqui
-}
-
-module.exports = {
+ // Desafio 9
+  function encode() {
+  
+  }
+ 
+  function decode() {
+  
+  }
+  
+  // // Desafio 10
+  function techList() {
+  }
+  
+ module.exports = {
   calcArea,
   catAndMouse,
   compareTrue,
@@ -83,4 +87,4 @@ module.exports = {
   highestCount,
   splitSentence,
   techList,
-};
+  };
